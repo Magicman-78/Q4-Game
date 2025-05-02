@@ -1,0 +1,20 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1045 &1
+EditorBuildSettings:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Scenes:
+  - enabled: 0
+    path: Assets/Kreston/SampleScene.unity
+    guid: 99c9720ab356a0642a771bea13969a05
+  - enabled: 1
+    path: Assets/Final Game/Scenes/Title Screen.unity
+    guid: 7de8419c72471a94c8ea39590de8e03a
+  - enabled: 1
+    path: Assets/Final Game/Scenes/Final Game.unity
+    guid: c7c8ad45aeb0e12408565f3da2d2e621
+  m_configObjects:
+    com.unity.input.settings.actions: {fileID: -944628639613478452, guid: a1922a81b79f5754d91fa256136ef437,
+      type: 3}
+  m_UseUCBPForAssetBundles: 0
