@@ -474,7 +474,7 @@ public partial class @Controller: IInputActionCollection2, IDisposable
                 {
                     ""name"": """",
                     ""id"": ""6f5711c7-5c80-470d-8ae7-70b705a5451f"",
-                    ""path"": ""<Keyboard>/t"",
+                    ""path"": ""<Keyboard>/escape"",
                     ""interactions"": """",
                     ""processors"": """",
                     ""groups"": "";Keyboard&Mouse"",
