@@ -28,38 +28,7 @@ public class SunMask : Mask
 
     public override void Behaviour(PlayerMovement player)
     {
-        if (collectedMask == true)
-        {
-            // if you hold left click
-            if (player.GetComponent<PlayerInput>().actions["Flame Hold"].WasPressedThisFrame())
-            {
-                if (heldObj == null) //if currently not holding anything
-                {
-                    //perform raycast to check if player is looking at object within pickuprange
-                    Ray ray = Camera.main.ScreenPointToRay(Mouse.current.position.ReadValue());
-                    RaycastHit hit;
-                    if (Physics.Raycast(ray, out hit, pickUpRange))
-                    {
-                        //make sure pickup tag is attached
-                        if (hit.transform.gameObject.CompareTag("Brazier Flame"))
-                        {
-                            //pass in object hit into the PickUpFlame function
-                            PickUpFlame(hit.transform.gameObject);
-                        }
-                        ;
-                    }
-                }
 
-                else
-                {
-                    if (canDrop == true)
-                    {
-                        StopClipping(); //prevents object from clipping through walls
-                        DropObject();
-                    }
-                }
-            }
-        }
 
         if (player.GetComponent<PlayerInput>().actions["Flame Hold"].WasReleasedThisFrame() && heldObj != null)
         {
@@ -73,7 +42,6 @@ public class SunMask : Mask
             {
                 StopClipping();
             }
-
         }
     }
 
@@ -129,6 +97,39 @@ public class SunMask : Mask
             heldObj.transform.position = transform.position + new Vector3(0f, -0.5f, 0f); //offset slightly downward to stop object dropping above player 
             //if your player is small, change the -0.5f to a smaller number (in magnitude) ie: -0.1f
         }
+    }
+
+    public void CheckToGrabFlame()
+    {
+        if (GetComponent<PlayerMovement>().currentMask != this)
+            return;
+
+        // if you hold left click
+        if (heldObj == null) //if currently not holding anything
+        {
+            //perform raycast to check if player is looking at object within pickuprange
+            Ray ray = Camera.main.ScreenPointToRay(Mouse.current.position.ReadValue());
+            RaycastHit hit;
+            if (Physics.Raycast(ray, out hit, pickUpRange))
+            {
+                //make sure pickup tag is attached
+                if (hit.transform.gameObject.CompareTag("Brazier Flame"))
+                {
+                    //pass in object hit into the PickUpFlame function
+                    PickUpFlame(hit.transform.gameObject);
+                }
+                ;
+            }
+        }
+        else
+        {
+            if (canDrop == true)
+            {
+                StopClipping(); //prevents object from clipping through walls
+                DropObject();
+            }
+        }
+        
     }
 
     public override void EquipMask()

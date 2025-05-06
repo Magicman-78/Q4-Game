@@ -367,6 +367,17 @@ PrefabInstance:
       propertyPath: m_Name
       value: Player
       objectReference: {fileID: 0}
+    - target: {fileID: 5389404471707487018, guid: 4c8797228b882b74f97d9d129ec2b219,
+        type: 3}
+      propertyPath: flame
+      value: 
+      objectReference: {fileID: 3294926197670547062, guid: e9369eb7961a27d49a92e8c59e656d33,
+        type: 3}
+    - target: {fileID: 5389404471707487018, guid: 4c8797228b882b74f97d9d129ec2b219,
+        type: 3}
+      propertyPath: collectedMask
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 7010416463618127295, guid: 4c8797228b882b74f97d9d129ec2b219,
         type: 3}
       propertyPath: collectedMask
@@ -965,18 +976,39 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &1236711133 stripped
-MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 7758677943115597072, guid: 4c8797228b882b74f97d9d129ec2b219,
+--- !u!1 &1287155992 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 2997042004482559885, guid: edf9d9ccb6eedcc43a64741019207709,
     type: 3}
-  m_PrefabInstance: {fileID: 456587144}
+  m_PrefabInstance: {fileID: 2206304433855328327}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: b1a8714867ef67d41ba71c717cab198d, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
+--- !u!54 &1287155994
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1287155992}
+  serializedVersion: 4
+  m_Mass: 1
+  m_Drag: 0
+  m_AngularDrag: 0.05
+  m_CenterOfMass: {x: 0, y: 0, z: 0}
+  m_InertiaTensor: {x: 1, y: 1, z: 1}
+  m_InertiaRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ImplicitCom: 1
+  m_ImplicitTensor: 1
+  m_UseGravity: 0
+  m_IsKinematic: 0
+  m_Interpolate: 0
+  m_Constraints: 126
+  m_CollisionDetection: 0
 --- !u!1 &1482114010
 GameObject:
   m_ObjectHideFlags: 0
@@ -1343,7 +1375,7 @@ GameObject:
   - component: {fileID: 1595918822}
   m_Layer: 7
   m_Name: Test wall
-  m_TagString: Untagged
+  m_TagString: Brazier Flame
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1692,6 +1724,39 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3b31e4d1edd6dc34ba0a0162f2c81724, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!1 &1995328226 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 7435029443013450605, guid: edf9d9ccb6eedcc43a64741019207709,
+    type: 3}
+  m_PrefabInstance: {fileID: 2206304433855328327}
+  m_PrefabAsset: {fileID: 0}
+--- !u!54 &1995328233
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1995328226}
+  serializedVersion: 4
+  m_Mass: 1
+  m_Drag: 0
+  m_AngularDrag: 0.05
+  m_CenterOfMass: {x: 0, y: 0, z: 0}
+  m_InertiaTensor: {x: 1, y: 1, z: 1}
+  m_InertiaRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ImplicitCom: 1
+  m_ImplicitTensor: 1
+  m_UseGravity: 0
+  m_IsKinematic: 0
+  m_Interpolate: 0
+  m_Constraints: 126
+  m_CollisionDetection: 0
 --- !u!33 &2940116823419758
 MeshFilter:
   m_ObjectHideFlags: 0
@@ -2309,6 +2374,7 @@ GameObject:
   - component: {fileID: 2674180293987508966}
   - component: {fileID: 4490364061367592539}
   - component: {fileID: 4280333954931446012}
+  - component: {fileID: 4490364061367592540}
   m_Layer: 0
   m_Name: default
   m_TagString: Untagged
@@ -3565,10 +3631,23 @@ PrefabInstance:
       propertyPath: m_Name
       value: Brazier
       objectReference: {fileID: 0}
+    - target: {fileID: 7435029443013450605, guid: edf9d9ccb6eedcc43a64741019207709,
+        type: 3}
+      propertyPath: m_TagString
+      value: Brazier Flame
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 2997042004482559885, guid: edf9d9ccb6eedcc43a64741019207709,
+        type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1287155994}
+    - targetCorrespondingSourceObject: {fileID: 7435029443013450605, guid: edf9d9ccb6eedcc43a64741019207709,
+        type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1995328233}
   m_SourcePrefab: {fileID: 100100000, guid: edf9d9ccb6eedcc43a64741019207709, type: 3}
 --- !u!4 &2252813822600900413
 Transform:
@@ -5446,7 +5525,7 @@ Transform:
   m_GameObject: {fileID: 914205007793762092}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalPosition: {x: -9.6, y: 0, z: 6.6}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -5527,6 +5606,28 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!64 &4490364061367592540
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 914205007793762092}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 5
+  m_Convex: 0
+  m_CookingOptions: 30
+  m_Mesh: {fileID: -2432090755550338912, guid: a6d658757c994fa4e8e0f07c9607d012, type: 3}
 --- !u!33 &4498923731024924551
 MeshFilter:
   m_ObjectHideFlags: 0
@@ -8380,6 +8481,7 @@ GameObject:
   - component: {fileID: 2823090746110319142}
   - component: {fileID: 1587545474162376370}
   - component: {fileID: 294352354}
+  - component: {fileID: 8164078559013711960}
   m_Layer: 0
   m_Name: default
   m_TagString: Untagged
@@ -8387,6 +8489,28 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
+--- !u!64 &8164078559013711960
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8164078559013711959}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 5
+  m_Convex: 0
+  m_CookingOptions: 30
+  m_Mesh: {fileID: -2432090755550338912, guid: a6d658757c994fa4e8e0f07c9607d012, type: 3}
 --- !u!1 &8164078559530237278
 GameObject:
   m_ObjectHideFlags: 0
@@ -8399,6 +8523,7 @@ GameObject:
   - component: {fileID: 2823090747775031087}
   - component: {fileID: 1587545475759846331}
   - component: {fileID: 1992358105}
+  - component: {fileID: 8164078559530237279}
   m_Layer: 0
   m_Name: default
   m_TagString: Untagged
@@ -8406,6 +8531,28 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
+--- !u!64 &8164078559530237279
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8164078559530237278}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 5
+  m_Convex: 0
+  m_CookingOptions: 30
+  m_Mesh: {fileID: -2432090755550338912, guid: a6d658757c994fa4e8e0f07c9607d012, type: 3}
 --- !u!1 &8221546226305454216
 GameObject:
   m_ObjectHideFlags: 0
@@ -8778,7 +8925,7 @@ PrefabInstance:
         type: 3}
       propertyPath: onInteraction.m_PersistentCalls.m_Calls.Array.data[2].m_Target
       value: 
-      objectReference: {fileID: 1236711133}
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
