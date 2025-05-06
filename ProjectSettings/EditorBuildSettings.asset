@@ -14,6 +14,9 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Final Game/Scenes/Final Game.unity
     guid: c7c8ad45aeb0e12408565f3da2d2e621
+  - enabled: 1
+    path: Assets/Final Game/Scenes/Credits.unity
+    guid: c68d22f23c9a7ba428fd70ce0f280b2f
   m_configObjects:
     com.unity.input.settings.actions: {fileID: -944628639613478452, guid: a1922a81b79f5754d91fa256136ef437,
       type: 3}
