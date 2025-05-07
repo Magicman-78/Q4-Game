@@ -9,7 +9,7 @@ public class SunMask : Mask
 {
     public GameObject player;
     public Transform holdPos;
-    
+
     public float pickUpRange = 5f; //how far the player can pickup the object from
     private GameObject heldObj; //object which we pick up
     private Rigidbody heldObjRb; //rigidbody of object we pick up
@@ -28,8 +28,6 @@ public class SunMask : Mask
 
     public override void Behaviour(PlayerMovement player)
     {
-
-
         if (player.GetComponent<PlayerInput>().actions["Flame Hold"].WasReleasedThisFrame() && heldObj != null)
         {
             DeleteObject();
@@ -60,16 +58,6 @@ public class SunMask : Mask
             //make sure object doesnt collide with player, it can cause weird bugs
             Physics.IgnoreCollision(heldObj.GetComponent<Collider>(), player.GetComponent<Collider>(), true);
         }
-    }
-
-    void DropObject()
-    {
-        //re-enable collision with player
-        Physics.IgnoreCollision(heldObj.GetComponent<Collider>(), player.GetComponent<Collider>(), false);
-        heldObj.layer = 0; //object assigned back to default layer
-        heldObjRb.isKinematic = false;
-        heldObj.transform.parent = null; //unparent object
-        heldObj = null; //undefine game object
     }
 
     void MoveObject()
@@ -112,13 +100,12 @@ public class SunMask : Mask
             RaycastHit hit;
             if (Physics.Raycast(ray, out hit, pickUpRange))
             {
-                //make sure pickup tag is attached
+                //make sure Brazier Flame tag is attached
                 if (hit.transform.gameObject.CompareTag("Brazier Flame"))
                 {
                     //pass in object hit into the PickUpFlame function
                     PickUpFlame(hit.transform.gameObject);
                 }
-                ;
             }
         }
         else
@@ -126,7 +113,6 @@ public class SunMask : Mask
             if (canDrop == true)
             {
                 StopClipping(); //prevents object from clipping through walls
-                DropObject();
             }
         }
         
