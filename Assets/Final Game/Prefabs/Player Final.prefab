@@ -1381,7 +1381,7 @@ MonoBehaviour:
   cam: {fileID: 432735826824501870}
   maskOff:
     serializedVersion: 2
-    m_Bits: 119
+    m_Bits: 631
   maskOn:
     serializedVersion: 2
     m_Bits: 4294967295
