@@ -1,10 +1,13 @@
 using NUnit.Framework;
 using UnityEngine;
 using System.Collections.Generic;
+using UnityEngine.Events;
 
 public class Brazier : MonoBehaviour
 {
     public static List<GameObject> yourOrder = new();
+
+    public UnityEvent correct;
 
     private void OnCollisionExit(Collision collider)
     {
@@ -25,6 +28,7 @@ public class Brazier : MonoBehaviour
         if (BrazierPuzzle.CompareLists(yourOrder, FindFirstObjectByType<BrazierPuzzle>().correctOrder))
         {
             Debug.Log("This is correct");
+            correct.Invoke();
         }
 
         else
