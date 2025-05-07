@@ -1,5 +1,6 @@
-using NUnit.Framework;
+using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.Events;
 
 public class PressurePlate : MonoBehaviour
 {
@@ -7,16 +8,20 @@ public class PressurePlate : MonoBehaviour
     public static bool platesComplete = false;
     public int plateIDNum;
 
+    public UnityEvent Correct;
+
     public bool isSunken = false;
 
     public Animator plateAnimator;
 
-    private void Update()
+    public void Update()
     {
         if (platesComplete)
         {
             plateAnimator.SetTrigger("Player Step");
             Debug.Log("COMPLETE");
+
+            Correct.Invoke();
         }
     }
 

@@ -7,7 +7,6 @@ public class PressurePlateHost : MonoBehaviour
     //things that stay the same
     public int plateCorrectID;
     public List<PressurePlate> plates;
-    public UnityEvent Correct;
 
     public void CheckPlates()
     {
@@ -15,8 +14,8 @@ public class PressurePlateHost : MonoBehaviour
         if (plateCorrectID == PressurePlate.plateIDTotal)
         {
             PressurePlate.platesComplete = true;
-            Correct.Invoke();
         }
+
         else
         {
             PressurePlate.plateIDTotal = 0;
