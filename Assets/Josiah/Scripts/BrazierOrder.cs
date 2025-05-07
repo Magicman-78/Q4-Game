@@ -25,7 +25,7 @@ public class Brazier : MonoBehaviour
 
     public void CheckOrder()
     {
-        if (BrazierPuzzle.CompareLists(yourOrder, FindFirstObjectByType<BrazierPuzzle>().correctOrder))
+        if (BrazierOrderHost.CompareLists(yourOrder, FindFirstObjectByType<BrazierOrderHost>().correctOrder))
         {
             Debug.Log("This is correct");
             correct.Invoke();
@@ -33,7 +33,7 @@ public class Brazier : MonoBehaviour
 
         else
         {
-            FindFirstObjectByType<BrazierPuzzle>().ResetOrder();
+            FindFirstObjectByType<BrazierOrderHost>().ResetOrder();
         }
     }
 }

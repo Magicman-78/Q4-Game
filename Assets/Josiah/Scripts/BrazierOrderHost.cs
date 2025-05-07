@@ -2,7 +2,7 @@ using NUnit.Framework;
 using UnityEngine;
 using System.Collections.Generic;
 
-public class BrazierPuzzle : MonoBehaviour
+public class BrazierOrderHost : MonoBehaviour
 {
     public List<GameObject> correctOrder;
 

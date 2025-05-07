@@ -11,8 +11,8 @@ GameObject:
   - component: {fileID: 2196279355465436526}
   - component: {fileID: 1632703059892926325}
   - component: {fileID: 2066514725665121079}
-  - component: {fileID: 6930597229467965914}
   - component: {fileID: 2775337944697474900}
+  - component: {fileID: 48486635190757917}
   m_Layer: 0
   m_Name: default
   m_TagString: Untagged
@@ -29,7 +29,7 @@ Transform:
   m_GameObject: {fileID: 1540004835915332989}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -9.6, y: 0, z: 6.6}
+  m_LocalPosition: {x: -4.79, y: 0, z: 5.44}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -88,18 +88,6 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
---- !u!114 &6930597229467965914
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1540004835915332989}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 3b31e4d1edd6dc34ba0a0162f2c81724, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!65 &2775337944697474900
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -121,6 +109,23 @@ BoxCollider:
   serializedVersion: 3
   m_Size: {x: 3.983542, y: 4.82609, z: 4.188542}
   m_Center: {x: -0.00000011920929, y: 2.502787, z: 0}
+--- !u!114 &48486635190757917
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1540004835915332989}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d2de0952b76c8934d807eb2e32f4f63d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  correctOrder:
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
 --- !u!1 &7287661924463167436
 GameObject:
   m_ObjectHideFlags: 0
@@ -145,9 +150,9 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 7287661924463167436}
   serializedVersion: 2
-  m_LocalRotation: {x: 0, y: -0, z: -0, w: 1}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 1.86, y: 0, z: -5.425}
-  m_LocalScale: {x: 0.2, y: 0.2, z: 0.2}
+  m_LocalScale: {x: 0.8, y: 1, z: 0.8}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 2196279355465436526}
