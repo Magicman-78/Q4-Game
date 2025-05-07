@@ -268,7 +268,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 0}
-        m_TargetAssemblyTypeName: MoonMask, Assembly-CSharp
+        m_TargetAssemblyTypeName: Mask, Assembly-CSharp
         m_MethodName: setCollectedMask
         m_Mode: 6
         m_Arguments:
@@ -301,7 +301,7 @@ Animator:
   m_GameObject: {fileID: 7981918108151107253}
   m_Enabled: 1
   m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: 798e08fa28329e546928962217e1f7dd, type: 2}
+  m_Controller: {fileID: 9100000, guid: 41630a95651677749aa6a52bdaa42324, type: 2}
   m_CullingMode: 0
   m_UpdateMode: 0
   m_ApplyRootMotion: 0
