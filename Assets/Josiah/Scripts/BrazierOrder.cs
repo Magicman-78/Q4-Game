@@ -19,7 +19,7 @@ public class Brazier : MonoBehaviour
 
     public void LightBrazier()
     {
-        yourOrder.Add(transform.parent.gameObject);
+        yourOrder.Add(transform.gameObject);
         Debug.Log("This brazier is lit!");
     }
 

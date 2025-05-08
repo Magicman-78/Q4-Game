@@ -6,11 +6,6 @@ public class BrazierOrderHost : MonoBehaviour
 {
     public List<GameObject> correctOrder;
 
-    private void Update()
-    {
-
-    }
-
     // Uses T instead of GameObject so that it can be any variable types including GameObkects
     // Goes through both the lists until it reaches the end amount to make sure they are both the same
     public static bool CompareLists<T>(List<T> listA, List<T> listB)

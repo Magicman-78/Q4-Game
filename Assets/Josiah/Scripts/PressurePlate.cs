@@ -19,7 +19,6 @@ public class PressurePlate : MonoBehaviour
         if (platesComplete)
         {
             plateAnimator.SetTrigger("Player Step");
-            Debug.Log("COMPLETE");
 
             Correct.Invoke();
         }

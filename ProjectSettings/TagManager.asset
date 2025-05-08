@@ -9,6 +9,7 @@ TagManager:
   - Unlit Flame
   - Interactable
   - Pressure Plate
+  - Wind
   layers:
   - Default
   - TransparentFX

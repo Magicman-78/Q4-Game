@@ -1148,7 +1148,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 693858923104801593}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Hold Pos
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1164,7 +1164,7 @@ Transform:
   m_GameObject: {fileID: 6486003485002100408}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: -0.5, z: 1.5}
+  m_LocalPosition: {x: 0, y: -0.06, z: 1.5}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -1655,11 +1655,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   maskName: Sun Mask
-  collectedMask: 0
+  collectedMask: 1
   player: {fileID: 7841433832636184973}
   holdPos: {fileID: 693858923104801593}
   pickUpRange: 5
-  flame: {fileID: 7914448171946415222, guid: 80ea472253fa6c947b550a86366f8d79, type: 3}
+  flame: {fileID: 3294926197670547062, guid: e9369eb7961a27d49a92e8c59e656d33, type: 3}
 --- !u!114 &2594263579257281247
 MonoBehaviour:
   m_ObjectHideFlags: 0
