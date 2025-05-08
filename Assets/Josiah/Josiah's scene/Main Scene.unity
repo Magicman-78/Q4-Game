@@ -376,6 +376,18 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 4c8797228b882b74f97d9d129ec2b219, type: 3}
+--- !u!114 &456587153 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 2594263579257281247, guid: 4c8797228b882b74f97d9d129ec2b219,
+    type: 3}
+  m_PrefabInstance: {fileID: 456587144}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b1a8714867ef67d41ba71c717cab198d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &671947323
 GameObject:
   m_ObjectHideFlags: 0
@@ -3353,7 +3365,7 @@ PrefabInstance:
         type: 3}
       propertyPath: onInteraction.m_PersistentCalls.m_Calls.Array.data[2].m_Target
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 456587153}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []

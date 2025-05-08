@@ -17,7 +17,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!224 &7447520599118464025
 RectTransform:
   m_ObjectHideFlags: 0
@@ -86,6 +86,7 @@ GameObject:
   - component: {fileID: 1766517163773877636}
   - component: {fileID: 6999026298677805595}
   - component: {fileID: 1529778823694320098}
+  - component: {fileID: 6251104920858181814}
   m_Layer: 0
   m_Name: Image
   m_TagString: Untagged
@@ -150,6 +151,19 @@ MonoBehaviour:
   m_FillOrigin: 0
   m_UseSpriteMesh: 0
   m_PixelsPerUnitMultiplier: 1
+--- !u!114 &6251104920858181814
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1073395883129031474}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0e07dfa1a1c017441957826b264d5474, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  tutorialImage: {fileID: 1529778823694320098}
 --- !u!1 &1520048161925602642
 GameObject:
   m_ObjectHideFlags: 0
@@ -592,7 +606,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!224 &7791778697024934255
 RectTransform:
   m_ObjectHideFlags: 0
@@ -1031,13 +1045,14 @@ GameObject:
   - component: {fileID: 5173125511443606315}
   - component: {fileID: 4155268307041736754}
   - component: {fileID: 7629342048166982159}
+  - component: {fileID: 3877347520530561619}
   m_Layer: 0
   m_Name: Leaf
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!224 &5173125511443606315
 RectTransform:
   m_ObjectHideFlags: 0
@@ -1072,7 +1087,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 4540138781682072689}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
   m_Name: 
@@ -1095,6 +1110,19 @@ MonoBehaviour:
   m_FillOrigin: 0
   m_UseSpriteMesh: 0
   m_PixelsPerUnitMultiplier: 1
+--- !u!114 &3877347520530561619
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4540138781682072689}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0e07dfa1a1c017441957826b264d5474, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  tutorialImage: {fileID: 7629342048166982159}
 --- !u!1 &4599282346434466539
 GameObject:
   m_ObjectHideFlags: 0
@@ -1214,13 +1242,14 @@ GameObject:
   - component: {fileID: 7580988053061724701}
   - component: {fileID: 6226092242193059549}
   - component: {fileID: 8317218674236938147}
+  - component: {fileID: 5673966198700237859}
   m_Layer: 0
   m_Name: Moon
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!224 &7580988053061724701
 RectTransform:
   m_ObjectHideFlags: 0
@@ -1255,7 +1284,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 4764596500417395008}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
   m_Name: 
@@ -1278,6 +1307,19 @@ MonoBehaviour:
   m_FillOrigin: 0
   m_UseSpriteMesh: 0
   m_PixelsPerUnitMultiplier: 1
+--- !u!114 &5673966198700237859
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4764596500417395008}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0e07dfa1a1c017441957826b264d5474, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  tutorialImage: {fileID: 8317218674236938147}
 --- !u!1 &5057919424402233900
 GameObject:
   m_ObjectHideFlags: 0
@@ -1289,13 +1331,14 @@ GameObject:
   - component: {fileID: 7034610441489010988}
   - component: {fileID: 4503115358078427158}
   - component: {fileID: 6519036282068357927}
+  - component: {fileID: 6732496633633582473}
   m_Layer: 0
   m_Name: Sun
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!224 &7034610441489010988
 RectTransform:
   m_ObjectHideFlags: 0
@@ -1330,7 +1373,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 5057919424402233900}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
   m_Name: 
@@ -1353,6 +1396,19 @@ MonoBehaviour:
   m_FillOrigin: 0
   m_UseSpriteMesh: 0
   m_PixelsPerUnitMultiplier: 1
+--- !u!114 &6732496633633582473
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5057919424402233900}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0e07dfa1a1c017441957826b264d5474, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  tutorialImage: {fileID: 6519036282068357927}
 --- !u!1 &5128856685119743923
 GameObject:
   m_ObjectHideFlags: 0
@@ -1460,7 +1516,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!224 &1063554048723270360
 RectTransform:
   m_ObjectHideFlags: 0
@@ -1601,6 +1657,7 @@ GameObject:
   - component: {fileID: 2594263579257281247}
   - component: {fileID: 7282984042607448949}
   - component: {fileID: 9057446377283843574}
+  - component: {fileID: 248681983801266850}
   m_Layer: 0
   m_Name: Player Final
   m_TagString: Player
@@ -2082,6 +2139,123 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   PausePanel: {fileID: 3519747831715664538}
+--- !u!114 &248681983801266850
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7841433832636184973}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 79c9671307bc3844bb3c9d9c60b3fe94, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  moonMaskImage:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 5673966198700237859}
+        m_TargetAssemblyTypeName: ImageDisable, Assembly-CSharp
+        m_MethodName: HideImage
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+  sunMaskImage:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 6732496633633582473}
+        m_TargetAssemblyTypeName: ImageDisable, Assembly-CSharp
+        m_MethodName: ShowImage
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+  leafMaskImage:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 3877347520530561619}
+        m_TargetAssemblyTypeName: ImageDisable, Assembly-CSharp
+        m_MethodName: ShowImage
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+  moonMaskHideImage:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 5673966198700237859}
+        m_TargetAssemblyTypeName: ImageDisable, Assembly-CSharp
+        m_MethodName: HideImage
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+  sunMaskHideImage:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 6732496633633582473}
+        m_TargetAssemblyTypeName: ImageDisable, Assembly-CSharp
+        m_MethodName: HideImage
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+  leafMaskHideImage:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 3877347520530561619}
+        m_TargetAssemblyTypeName: ImageDisable, Assembly-CSharp
+        m_MethodName: HideImage
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+  unequippedImage:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 6251104920858181814}
+        m_TargetAssemblyTypeName: ImageDisable, Assembly-CSharp
+        m_MethodName: ShowImage
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!1 &8427467305991289137
 GameObject:
   m_ObjectHideFlags: 0
