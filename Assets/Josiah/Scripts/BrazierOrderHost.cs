@@ -26,5 +26,10 @@ public class BrazierOrderHost : MonoBehaviour
     public void ResetOrder()
     {
         Brazier.yourOrder.Clear();
+
+        foreach (var item in correctOrder)
+        {
+            Destroy(item.GetComponent<Brazier>().flameParticle);
+        }
     }
 }
