@@ -1,14 +1,14 @@
 using UnityEngine;
+using UnityEngine.Events;
 
 public class MaskUI : MonoBehaviour
 {
-    // Start is called once before the first execution of Update after the MonoBehaviour is created
-    void Start()
-    {
-        
-    }
+    public UnityEvent LeafTrigger;
+    public UnityEvent SunTrigger;
+    public UnityEvent MoonTrigger;
 
-    // Update is called once per frame
+
+
     void Update()
     {
         
