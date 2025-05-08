@@ -9,6 +9,8 @@ public class Brazier : MonoBehaviour
 
     public UnityEvent correct;
 
+    public GameObject flameParticle;
+
     private void OnCollisionExit(Collision collider)
     {
         if (collider.gameObject.CompareTag("Flame")) 
@@ -19,6 +21,7 @@ public class Brazier : MonoBehaviour
 
     public void LightBrazier()
     {
+        Instantiate(flameParticle);
         yourOrder.Add(transform.gameObject);
         Debug.Log("This brazier is lit!");
     }
