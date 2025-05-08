@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 7779251194456388644}
   - component: {fileID: 8733321437514301829}
   - component: {fileID: 5219948717860408461}
-  - component: {fileID: 4567755314664802049}
+  - component: {fileID: 6924803663214072105}
   - component: {fileID: 4079512765350400900}
   - component: {fileID: 6037111912276485051}
   m_Layer: 0
@@ -90,7 +90,7 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
---- !u!114 &4567755314664802049
+--- !u!114 &6924803663214072105
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -99,25 +99,10 @@ MonoBehaviour:
   m_GameObject: {fileID: 7087374392461473992}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 3b31e4d1edd6dc34ba0a0162f2c81724, type: 3}
+  m_Script: {fileID: 11500000, guid: d2de0952b76c8934d807eb2e32f4f63d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  correct:
-    m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 0}
-        m_TargetAssemblyTypeName: 
-        m_MethodName: 
-        m_Mode: 0
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: 
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
-  flameParticle: {fileID: 0}
+  correctOrder: []
 --- !u!54 &4079512765350400900
 Rigidbody:
   m_ObjectHideFlags: 0

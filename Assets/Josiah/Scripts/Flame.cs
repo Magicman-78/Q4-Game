@@ -2,16 +2,18 @@ using UnityEngine;
 
 public class Flame : MonoBehaviour
 {
-    public void OnCollisionExit(Collision collision)
+    public GameObject flame;
+
+    public void OntTriggerEnter(Collision collision)
     {
         if (collision.gameObject.CompareTag("Wind"))
         {
-            Destroy(gameObject);
+            Destroy(flame);
         }
 
         if (collision.gameObject.CompareTag("Unlit Flame"))
         {
-            Destroy(gameObject);
+            Destroy(flame);
         }
     }
 }
