@@ -9,8 +9,6 @@ public class LeafMask : Mask
 
     [HideInInspector] public float currentJumpHeight;
 
-
-
     private void Start()
     {
     }
