@@ -2091,7 +2091,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   maskName: Sun Mask
-  collectedMask: 1
+  collectedMask: 0
   player: {fileID: 7841433832636184973}
   holdPos: {fileID: 693858923104801593}
   pickUpRange: 5
