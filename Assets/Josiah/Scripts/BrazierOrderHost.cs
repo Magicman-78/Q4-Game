@@ -1,4 +1,3 @@
-using NUnit.Framework;
 using UnityEngine;
 using System.Collections.Generic;
 
@@ -29,7 +28,7 @@ public class BrazierOrderHost : MonoBehaviour
 
         foreach (var item in correctOrder)
         {
-            Destroy(item.GetComponent<Brazier>().flameParticle);
+            Destroy(item.GetComponent<Brazier>().currentParticles);
         }
     }
 }

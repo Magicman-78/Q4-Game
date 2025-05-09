@@ -1,4 +1,3 @@
-using NUnit.Framework;
 using UnityEngine;
 using System.Collections.Generic;
 using UnityEngine.Events;
@@ -11,6 +10,10 @@ public class Brazier : MonoBehaviour
 
     public GameObject flameParticle;
 
+    public bool lit;
+
+    [HideInInspector]public GameObject currentParticles;
+
     private void OnTriggerEnter(Collider collider)
     {
         if (collider.gameObject.CompareTag("Flame")) 
@@ -21,9 +24,12 @@ public class Brazier : MonoBehaviour
 
     public void LightBrazier()
     {
-        Instantiate(flameParticle, transform);
-        yourOrder.Add(transform.gameObject);
-        Debug.Log("This brazier is lit!");
+        if (lit == false)
+        {
+            currentParticles = Instantiate(flameParticle, transform);
+            yourOrder.Add(transform.gameObject);
+            Debug.Log("This brazier is lit!");
+        }
     }
 
     public void CheckOrder()
@@ -38,5 +44,10 @@ public class Brazier : MonoBehaviour
         {
             FindFirstObjectByType<BrazierOrderHost>().ResetOrder();
         }
+    }
+
+    public void MakeBoolFalse()
+    {
+        lit = false;
     }
 }
