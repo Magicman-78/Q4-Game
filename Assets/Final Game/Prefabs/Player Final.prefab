@@ -2156,7 +2156,7 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 5673966198700237859}
         m_TargetAssemblyTypeName: ImageDisable, Assembly-CSharp
-        m_MethodName: HideImage
+        m_MethodName: ShowImage
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}

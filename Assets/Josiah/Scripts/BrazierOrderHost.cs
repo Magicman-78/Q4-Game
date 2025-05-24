@@ -26,9 +26,9 @@ public class BrazierOrderHost : MonoBehaviour
     {
         Brazier.yourOrder.Clear();
 
-        foreach (var item in correctOrder)
-        {
-            Destroy(item.GetComponent<Brazier>().currentParticles);
-        }
+        //foreach (var item in correctOrder)
+        //{
+        //    Destroy(item.GetComponent<Brazier>().currentParticles);
+        //}
     }
 }
